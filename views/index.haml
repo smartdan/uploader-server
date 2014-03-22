@@ -1,0 +1,35 @@
+.container
+	.hero-unit
+		%h1
+			Home detector!
+		%p
+			This is a platform for home surveillance using a raspberry pi and a camera module .
+		%p
+			%a.btn.btn-primary.btn-large{:href => '/about' } Learn more
+
+	.row
+		.span4
+			%h2
+				Last picture
+			%p
+				Look at the last picture from your home.
+			%p
+				%a.btn{:href => '/look'} Look 
+		.span4
+			%h2
+				Upload new image
+			%p
+				Do it yourself. Upload a new capture image.
+			%p
+				%a.btn{:href => '/upload'} Upload
+		.span4
+			%h2
+				Go home
+			%p
+				You can go back home. 
+			%p
+				%a.btn{:href => '/'} Home 
+
+	%hr
+
+	%div= haml :footer

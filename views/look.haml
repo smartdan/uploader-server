@@ -1,0 +1,10 @@
+.container
+	.hero-unit
+		%h1 Look
+		%p This is the last uploaded image
+		%p
+			- last_images.each do |image|
+				%img(src="/uploads/#{image}")
+				%br
+	%hr
+	%div= haml :footer
